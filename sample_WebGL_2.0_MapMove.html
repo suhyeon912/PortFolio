@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>WebGL_2.0_MapMove</title>
+   <script type="text/javascript"
+      src="https://map.vworld.kr/js/webglMapInit.js.do?version=2.0&apiKey=331C8EDC-A578-3547-BA82-64B4871C2E0D&domain=http://127.0.0.1:5500/PortFolio/sample_WebGL_2.0_MapMove.html">
+   </script>
+   <link rel="stylesheet" href="./map.css">
+</head>
+
+<body>
+   <div class="vmap" id="vmap" style="width:100%;height:600px;left:0px;top:0px;bottom:0px;"></div>
+
+   <!-- <input type="button" onclick="vwmoveTo(126.923100000039,37.5262083301207,5000)" value="여의도">
+<input type="button" onclick="vwmoveTo(131.864677840073,37.2414795955336,2000)" value="독도"> -->
+   <!-- <input type="button" class="btn" onclick="vwmoveTo(126.976912,37.576267,50)" value="경복궁"> -->
+   <input type="image" class="imgbtn" src="./imgs/logo_ff.png" onclick="vwmoveTo(126.976912,37.576267,50)">
+
+   <script type="text/javascript">
+      var mapOptions = new vw.MapOptions(
+         vw.BasemapType.GRAPHIC,
+         "",
+         vw.DensityType.FULL,
+         vw.DensityType.BASIC,
+         false,
+         new vw.CameraPosition(
+            new vw.CoordZ(127.425, 38.196, 13487000),
+            new vw.Direction(-90, 0, 0)
+         ),
+         new vw.CameraPosition(
+            new vw.CoordZ(127.425, 38.196, 1548700),
+            new vw.Direction(0, -90, 0)
+         )
+      );
+
+      map = new vw.Map("vmap", mapOptions);
+
+      function vwmoveTo(x, y, z) {
+         var movePo = new vw.CoordZ(x, y, z);
+         var mPosi = new vw.CameraPosition(movePo, new vw.Direction(0, -80, 0));
+         map.moveTo(mPosi);
+      }
+   </script>
+</body>
+
+</html>
