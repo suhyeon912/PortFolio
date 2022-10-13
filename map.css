@@ -20,7 +20,7 @@ body input.imgbtn{
     
     cursor: pointer;
     width: 15%;
-    z-index: 5;
+    z-index: 2000;
 }
 
 /* body input.btn{
