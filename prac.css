@@ -1,23 +1,27 @@
 @charset "utf-8";
 @import url(./HTML/css/reset.css);
 
+
+
 html,
 body {
   position: absolute;
-  max-height: 959px;
-  height: 959px;
+  /* max-height: 959px; */
+  min-height: 950px;
+  height: 100%;
   width: 100%;
   text-align: center;
   font-size: 20px;
+  overflow: hidden;
 }
 
 .grid-cont {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: max-content;
-  gap: 2.5px;
-  max-height: 959px;
-  height: 959px;
+  /* gap: 2.5px; */
+  height: 100%;
+  width: 100%;
   background: skyblue;
 
   /* grid-template-areas: 
@@ -32,33 +36,31 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   height: 6vh;
   padding: 2.5px;
-  margin-top: 1px;
 }
 
-.logo{
+.logo {
   background: white;
-  margin: 2.5px;
+  margin: 2.5px 2.5px 0 2.5px;
 }
 
-.nav{
+.nav {
   background: white;
-  margin: 2.5px;
+  margin: 2.5px 2.5px 0 2.5px;
 }
 
-.search{
+.search {
   background: white;
-  margin: 2.5px;
+  margin: 2.5px 2.5px 0 2.5px;
 }
 
 
 .cont {
   display: grid;
-  height: 885px;
+  height: 99.9%;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-template-columns: 1fr 2fr 1fr;
   padding: 2.5px;
-
 }
 
 .left-img,
@@ -81,7 +83,7 @@ body {
 .left-img>div:nth-child(6),
 .right-img>div:nth-child(6) {
   background: lightyellow;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .mid,
@@ -133,4 +135,5 @@ body {
 .map {
   padding: 2.5px;
   background: lightcoral;
+  margin-bottom: 5px;
 }
