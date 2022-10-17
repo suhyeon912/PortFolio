@@ -4,7 +4,7 @@
 html,
 body {
   position: absolute;
-  height: 100%;
+  height: 959px;
   width: 100%;
 }
 
@@ -12,14 +12,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto;
-  gap: 5px;
+  gap: 2.5px;
+  height: 959px;
   background: skyblue;
 }
 
 .grid-cont>div div {
   /* background: white; */
   text-align: center;
-  padding: 10px 0 10px 10px;
   font-size: 20px;
 }
 
@@ -29,35 +29,108 @@ body {
   grid-column-end: 4;
   grid-template-columns: 1fr 2fr 1fr;
   height: 30%;
+  padding: 2.5px;
+  margin-top: 1px;
 }
 
-.cont{
+.logo{
+  background: white;
+  margin: 2.5px;
+  height: 120%;
+}
+
+.nav{
+  background: white;
+  margin: 2.5px;
+  height: 120%;
+}
+
+.search{
+  background: white;
+  margin: 2.5px 2.5px 0 2.5px;
+  height: 120%;
+}
+
+
+.cont {
   display: grid;
-  height: 100%;
+  height: 900px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-template-columns: 1fr 2fr 1fr;
+  padding: 2.5px;
+
 }
 
-.left-img, .right-img{
+.left-img,
+.right-img {
   display: grid;
-  height: 100%;
+  padding: 2.5px;
+  grid-template-rows: 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr;
+  padding-bottom: 2.5px;
 }
 
-.img{
-  height: 218px;
-  width: 100%;
+.img {
   background: white;
 }
 
-/* .itext{
-} */
+.itext {
+  background: lightyellow;
+  margin-bottom: 5px;
+}
 
-.mid{
+.left-img>div:nth-child(6),
+.right-img>div:nth-child(6) {
+  background: lightyellow;
+  margin: 0;
+}
+
+.mid,
+.mid-top,
+.mid-bottom {
   display: grid;
 }
 
-.left-region{
+.mid {
+  grid-template-rows: 1.7fr 2.5fr;
+}
+
+.region {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  /* grid-template-columns: 1fr 1fr 1fr 3fr; */
+  grid-template-areas:
+    "region-img info"
+    "region-name info"
+    "region-text info";
+  grid-template-columns: 1.2fr 3fr;
+  padding: 2.5px;
+}
+
+.region-img {
+  grid-area: region-img;
+  background: lightgray;
+}
+
+.region-name {
+  grid-area: region-name;
+  background: lightgoldenrodyellow;
+}
+
+.region-text {
+  grid-area: region-text;
+  background: lightcyan;
+}
+
+.region-info {
+  grid-area: info;
+  background: white;
+}
+
+.mid-bottom {
+  padding: 2.5px;
+}
+
+.map {
+  padding: 2.5px;
+  background: lightcoral;
 }
