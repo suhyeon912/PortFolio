@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/source/css/grid.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/source/css/grid.css">
-</head>
+   </head>
 
-<body>
-  <div class="grid-cont">
-    <!-- 상단 -->
-    <nav class="top">
-      <div class="logo">
-        <a href=""><img src="../imgs/logo_ff.png" alt=""></a>
+   <body>
+      <div class="grid-cont">
+         <!-- 상단 -->
+         <nav class="top">
+            <div class="logo">
+               <a href=""><img src="../imgs/logo_ff.png" alt="" /></a>
+            </div>
+            <div class="nav">
+               <li><a href="">ABOUT US</a></li>
+               <li><a href="">TOUR</a></li>
+               <li><a href="">VISIT KOREA</a></li>
+               <li><a href="">CONTACT</a></li>
+            </div>
+            <div class="icons">
+               <li>
+                  <form action="." method="post">
+                     <input type="text" class="search-txt" placeholder="search" />
+                     <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+               </li>
+               <li><i class="profile"></i></li>
+            </div>
+         </nav>
+
+         <!-- 내용 -->
+         <div class="cont">
+            <!-- 왼쪽 이미지 -->
+            <div class="cont-left">
+               <div class="img">img1</div>
+               <div class="itext">itext1</div>
+               <div class="img">img2</div>
+               <div class="itext">itext2</div>
+               <div class="img">img3</div>
+               <div class="itext">itext3</div>
+            </div>
+
+            <!-- 중앙 -->
+            <div class="cont-mid">
+               <!-- 지역 이미지 및 설명 -->
+               <div class="mid-top">
+                  <div class="region">
+                     <div class="region-img">region-img</div>
+                     <div class="region-name">region-name</div>
+                     <div class="region-text">region-text</div>
+                     <div class="region-info">region-info</div>
+                  </div>
+               </div>
+
+               <!-- 지도 -->
+               <div class="mid-bottom">
+                  <div class="map">map</div>
+               </div>
+            </div>
+
+            <!-- 오른쪽 이미지 -->
+            <div class="cont-right">
+               <div class="img">img4</div>
+               <div class="itext">itext4</div>
+               <div class="img">img5</div>
+               <div class="itext">itext5</div>
+               <div class="img">img6</div>
+               <div class="itext">itext6</div>
+            </div>
+         </div>
       </div>
-      <div class="nav">
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">TOUR</a></li>
-        <li><a href="">VISIT KOREA</a></li>
-        <li><a href="">CONTACT</a></li>
-      </div>
-      <div class="icons">
-        <li><i class="search"></i></li>
-        <li><i class="profile"></i></li>
-      </div>
-      </nav>
-
-    <!-- 내용 -->
-    <div class="cont">
-      <!-- 왼쪽 이미지 -->
-      <div class="cont-left">
-        <div class="img">img1</div>
-        <div class="itext">itext1</div>
-        <div class="img">img2</div>
-        <div class="itext">itext2</div>
-        <div class="img">img3</div>
-        <div class="itext">itext3</div>
-      </div>
-
-      <!-- 중앙 -->
-      <div class="cont-mid">
-        <!-- 지역 이미지 및 설명 -->
-        <div class="mid-top">
-          <div class="region">
-            <div class="region-img">region-img</div>
-            <div class="region-name">region-name</div>
-            <div class="region-text">region-text</div>
-            <div class="region-info">region-info</div>
-          </div>
-        </div>
-
-        <!-- 지도 -->
-        <div class="mid-bottom">
-          <div class="map">map</div>
-        </div>
-      </div>
-
-      <!-- 오른쪽 이미지 -->
-      <div class="cont-right">
-        <div class="img">img4</div>
-        <div class="itext">itext4</div>
-        <div class="img">img5</div>
-        <div class="itext">itext5</div>
-        <div class="img">img6</div>
-        <div class="itext">itext6</div>
-      </div>
-    </div>
-  </div>
-</body>
-
+   </body>
 </html>
