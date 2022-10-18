@@ -30,18 +30,52 @@ body {
 }
 
 .top {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   grid-column-start: 1;
   grid-column-end: 4;
   grid-template-columns: 1fr 2fr 1fr;
-  height: 7vh;
-  padding: 2.5px;
+  height: 8vh;
+  /* background: white; */
+  margin: 5px 5px 0 5px;
 }
 
-.logo {
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo a img {
+  height: 8vh;
+  object-fit: contain;
+  margin-left: 2.5px;
+}
+
+.nav {
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  float: left;
+  margin: 0 13px;
+}
+
+.nav li a:hover{
+  color: white;
+  z-index: 1;
+  scale: 1.2;
+  font-weight: bold;
+}
+
+
+
+/* .logo {
   width: 100%;
   height: 100%;
-  background: url("https://suhyeon912.github.io/PortFolio/HTML/imgs/logo_ff.png") center no-repeat;
+  background: url("/source/imgs/logo_ff.png") center no-repeat;
   background-size: contain;
   margin: 2.5px 2.5px 0 2.5px;
 }
@@ -54,7 +88,7 @@ body {
 .search {
   background: white;
   margin: 2.5px 2.5px 0 2.5px;
-}
+} */
 
 
 .cont {
@@ -66,8 +100,8 @@ body {
   padding: 2.5px;
 }
 
-.left-img,
-.right-img {
+.cont-left,
+.cont-right {
   display: grid;
   padding: 2.5px;
   grid-template-rows: 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr;
@@ -83,19 +117,19 @@ body {
   margin-bottom: 5px;
 }
 
-.left-img>div:nth-child(6),
-.right-img>div:nth-child(6) {
+.cont-left>div:nth-child(6),
+.cont-right>div:nth-child(6) {
   background: lightyellow;
   margin-bottom: 5px;
 }
 
-.mid,
+.cont-mid,
 .mid-top,
 .mid-bottom {
   display: grid;
 }
 
-.mid {
+.cont-mid {
   grid-template-rows: 1.7fr 2.5fr;
 }
 
