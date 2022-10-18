@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    display: inline-block;
+ }
+ 
+ .log {
+    width: 3fr;
+ }
+ 
+ .logo a img {
+    height: 8vh;
+    object-fit: contain;
+    /* margin-left: 50px; */
+ }
+ 
+ .nav {
+    align-items: center;
+ }
+ 
+ .nav li {
+    list-style: none;
+    float: left;
+ }
+ 
+ .nav li a{
+   margin: 0 13px;
+ }
+ 
+ .nav li a:hover {
+    color: white;
+    z-index: 1;
+    scale: 1.2;
+    font-weight: bold;
+ }
+ 
+ .icons {
+    list-style: none;
+    width: 3fr;
+ }
