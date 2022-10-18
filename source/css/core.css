@@ -8,17 +8,15 @@ a {
  .log {
     width: 3fr;
  }
+
+ 
  
  .logo a img {
     height: 8vh;
     object-fit: contain;
     /* margin-left: 50px; */
  }
- 
- .nav {
-    align-items: center;
- }
- 
+  
  .nav li {
     list-style: none;
     float: left;
@@ -37,5 +35,10 @@ a {
  
  .icons {
     list-style: none;
-    width: 3fr;
+    display: flex;
+    margin-left: auto;
+ }
+
+ .icons input{
+    width: 75%;
  }
