@@ -5,7 +5,7 @@ a {
     display: inline-block;
  }
  
- .log {
+ .logo {
     width: 3fr;
  }
 
@@ -26,12 +26,16 @@ a {
    margin: 0 13px;
  }
  
- .nav li a:hover {
+ .nav>li>a:hover {
     color: white;
     z-index: 1;
     scale: 1.2;
     font-weight: bold;
  }
+
+ /* .nav>li>a:visited{
+   color: cyan;
+ } */
  
  .icons {
     list-style: none;
