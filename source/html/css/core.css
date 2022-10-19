@@ -26,6 +26,7 @@ a {
    margin: 0 13px;
  }
  
+ .nav>li.on>a,
  .nav>li>a:hover {
     color: white;
     z-index: 1;
