@@ -4,3 +4,14 @@
 마우스 오버 시 변경되는 지역의 색상을 양 옆에 지역명을 나열하여 이미지 맵핑이 필요없게 바꿈
 
 각 세부 지역의 사진을 다듬을 것
+
+
+갈아엎기.
+나를 소개하는 웹페이지 제작
+
+HOME
+PROFILE
+WORK
+CONTACT
+
+https://www.henrynorthington.com/#home
