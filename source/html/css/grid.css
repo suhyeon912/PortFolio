@@ -90,19 +90,19 @@ body {
       "region-text info";
    grid-template-columns: 1.3fr 3fr;
    grid-template-rows: 1.3fr 1fr;
+   margin: 2.5px;
    padding: 2.5px;
+   background: lightgray;
 }
 
 .region-img {
    grid-area: region-img;
    display: grid;
    place-items: center;
-   background: lightgray;
 }
 
 .region-name {
    grid-area: region-name;
-   background: lightgray;
 }
 
 .region-info {
