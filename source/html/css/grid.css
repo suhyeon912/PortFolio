@@ -108,6 +108,12 @@ body {
 .region-info {
    grid-area: info;
    background: white;
+   font-size: 15px;
+   text-align: left;
+   display: grid;
+   place-items: center;
+   padding: 5px;
+   line-height: 2em;
 }
 
 .mid-bottom {

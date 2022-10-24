@@ -1,50 +1,59 @@
 @charset "utf-8";
 
-
 a {
-    text-decoration: none;
-    display: inline-block;
- }
- 
- .logo {
-    width: 3fr;
- }
+   text-decoration: none;
+   display: inline-block;
+}
 
- 
- 
- .logo a img {
-    height: 8vh;
-    object-fit: contain;
-    /* margin-left: 50px; */
- }
-  
- .nav li {
-    list-style: none;
-    float: left;
- }
- 
- .nav li a{
+.logo {
+   width: 3fr;
+}
+
+.logo a img {
+   height: 8vh;
+   object-fit: contain;
+   /* margin-left: 50px; */
+}
+
+.nav li {
+   list-style: none;
+   float: left;
+}
+
+.nav li a {
    margin: 0 13px;
- }
- 
- .nav>li.on>a,
- .nav>li>a:hover {
-    color: white;
-    z-index: 1;
-    scale: 1.2;
-    font-weight: bold;
- }
+}
 
- /* .nav>li>a:visited{
+.nav > li > a:hover {
+   /* color: white; */
+   background: white;
+   /* z-index: 1; */
+   /* scale: 1.2; */
+   font-weight: bold;
+}
+
+.nav > li.on > a {
+   color: white;
+   /* z-index: 1; */
+   font-weight: bold;
+}
+.nav > li.on > a:hover {
+   color: white;
+   /* z-index: 1; */
+   font-weight: bold;
+   background: black;
+}
+
+/* .nav>li>a:visited{
    color: cyan;
  } */
- 
- .icons {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
- }
 
- .icons input{
-    width: 75%;
- }
+.icons {
+   list-style: none;
+   display: flex;
+   margin-left: auto;
+}
+
+.icons input {
+   width: 75%;
+}
