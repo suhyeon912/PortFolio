@@ -89,23 +89,20 @@ body {
       "region-name info"
       "region-text info";
    grid-template-columns: 1.3fr 3fr;
-   grid-template-rows: 2fr 1fr 1fr;
+   grid-template-rows: 1.3fr 1fr;
    padding: 2.5px;
 }
 
 .region-img {
    grid-area: region-img;
+   display: grid;
+   place-items: center;
    background: lightgray;
 }
 
 .region-name {
    grid-area: region-name;
-   background: lightgoldenrodyellow;
-}
-
-.region-text {
-   grid-area: region-text;
-   background: lightcyan;
+   background: lightgray;
 }
 
 .region-info {
@@ -115,10 +112,15 @@ body {
 
 .mid-bottom {
    padding: 2.5px;
+   height: 100%;
 }
 
 .map {
+   grid-row-start: 2;
+   grid-row-end: 4;
    padding: 2.5px;
-   background: lightcoral;
+   /* background: lightcoral; */
    margin-bottom: 5px;
+   display: grid;
+   place-items: center;
 }
