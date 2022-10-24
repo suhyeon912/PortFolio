@@ -18,16 +18,16 @@
       font-weight-500;
    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
          format("woff") font-style-semibold,
-      font-weight-400;
+      font-weight-600;
    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
          format("woff") font-style-bold,
-      font-weight-400;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-         format("woff") font-style-normal,
-      font-weight-400;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-         format("woff") font-style-normal,
-      font-weight-400;
+      font-weight-700;
+   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
+         format("woff") font-style-extrabold,
+      font-weight-800;
+   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff")
+         format("woff") font-style-black,
+      font-weight-900;
 }
 
 /* 초기화 CSS - reset.css */
