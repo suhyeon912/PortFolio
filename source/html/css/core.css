@@ -62,7 +62,7 @@ a {
    width: 75%;
 }
 
-.ham {
+/* .ham {
    position: absolute;
    top: 20px;
    right: 20px;
@@ -72,6 +72,5 @@ a {
    background-color: transparent;
    border: none;
 
-   /* 처음에 안보임 */
    display: none;
-}
+} */
