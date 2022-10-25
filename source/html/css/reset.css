@@ -1,34 +1,5 @@
 @charset "utf-8";
-@font-face {
-   font-family: "Pretendard";
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff")
-         format("woff") font-style-thin,
-      font-weight-100;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff")
-         format("woff") font-style-extralight,
-      font-weight-200;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
-         format("woff") font-style-light,
-      font-weight-300;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-         format("woff") font-style-regular,
-      font-weight-400;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
-         format("woff") font-style-medium,
-      font-weight-500;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
-         format("woff") font-style-semibold,
-      font-weight-600;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-         format("woff") font-style-bold,
-      font-weight-700;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
-         format("woff") font-style-extrabold,
-      font-weight-800;
-   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff")
-         format("woff") font-style-blackfont,
-      font-weight-900;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
 /* 초기화 CSS - reset.css */
 /* 기본셋팅된 요소디자인 초기화 */
@@ -50,7 +21,7 @@ dt,
 dd {
    margin: 0;
    padding: 0;
-   font-family: "Pretendard-Regular";
+   font-family: "Pretendard";
 }
 /* ul,ol 블릿없앰 */
 ul,
