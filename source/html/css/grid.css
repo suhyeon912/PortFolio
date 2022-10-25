@@ -36,7 +36,7 @@ body {
    grid-template-columns: 1fr 2fr 1fr;
    height: 8vh;
    /* background: white; */
-   margin: 5px 5px 0 5px;
+   margin: 5px 2.5px 0 2.5px;
 }
 
 .cont {
@@ -54,6 +54,7 @@ body {
    padding: 2.5px;
    grid-template-rows: 2fr 0.35fr 2fr 0.35fr 2fr 0.35fr;
    padding-bottom: 2.5px;
+   max-width: 280px;
 }
 
 .img,
@@ -62,6 +63,8 @@ body {
    object-fit: cover;
    height: 100%;
    width: 100%;
+   max-width: 280px;
+   max-height: 300px;
 }
 
 .itext {
@@ -69,7 +72,9 @@ body {
    margin-bottom: 5px;
    display: grid;
    place-items: center;
-   /* font-family: "Pretendard-Regular"; */
+   font-weight: 500;
+   font-size: 18.5px;
+   max-width: 280px;
 }
 
 .cont-left > div:nth-child(6),
