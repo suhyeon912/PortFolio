@@ -15,3 +15,5 @@ https://www.henrynorthington.com/#home
 
 가로 전체화면일 때 비율이 맞지 않음
 media.css 작업 시 화면 크기에 따른 구성 변경부터 시작
+
+https://www.wikitree.co.kr/articles/632668
