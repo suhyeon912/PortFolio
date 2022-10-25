@@ -4,4 +4,6 @@
 @import url(../css/media.css);
 /* @import url(/source/css/grid.css); */
 
-
+#myCanvas:hover{
+   border: 1px solid black;
+}
