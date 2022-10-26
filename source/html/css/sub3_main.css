@@ -23,7 +23,6 @@ body {
 
 .grid-cont {
    display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
    grid-template-rows: max-content;
    /* gap: 2.5px; */
    height: 100%;
@@ -41,7 +40,7 @@ body {
 
    grid-column-start: 1;
    grid-column-end: 4;
-   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 0.65fr 2fr 0.7fr;
    height: 8vh;
    /* background: white; */
    margin: 5px 2.5px 0 2.5px;
@@ -52,7 +51,7 @@ body {
    height: 100%;
    grid-column-start: 1;
    grid-column-end: 4;
-   grid-template-columns: 1.5fr 0.5fr 1.5fr;
+   grid-template-columns: 1fr 2fr 1fr;
    padding: 2.5px;
 }
 
@@ -62,7 +61,7 @@ body {
    padding: 2.5px;
    grid-template-rows: 2fr 0.35fr 2fr 0.35fr 2fr 0.35fr;
    padding-bottom: 2.5px;
-   max-width: 280px;
+   /* max-width: 280px; */
 }
 
 .img,
@@ -71,8 +70,8 @@ body {
    object-fit: cover;
    height: 100%;
    width: 100%;
-   /* max-width: 280px;
-   max-height: 300px; */
+   /* max-width: 280px;*/
+   max-height: 300px; 
 }
 
 .itext {
@@ -82,7 +81,7 @@ body {
    place-items: center;
    font-weight: 500;
    font-size: 18.5px;
-   max-width: 280px;
+   /* max-width: 280px; */
 }
 
 .cont-left > div:nth-child(6),
@@ -97,8 +96,4 @@ body {
    height: auto;
    margin: 2.5px 2.5px 7.5px 2.5px;
    background: lightgray;
-}
-
-.cont-right {
-   justify-content: right;
 }
