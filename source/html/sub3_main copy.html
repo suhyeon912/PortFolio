@@ -7,7 +7,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 
-      <link rel="stylesheet" href="./css/sub3_main.css" type="text/css" />
+      <link rel="stylesheet" href="./css/sub3_main copy.css" type="text/css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -41,74 +41,33 @@
                      alt=""
                /></a>
             </div>
-            <div class="nav">
-               <li><a href="sub1_main.html">ABOUT US</a></li>
-               <li><a href="sub2_main.html">TOUR</a></li>
-               <li class="on"><a href="sub3_main.html">VISIT KOREA</a></li>
-               <li><a href="sub4_main.html">CONTACT</a></li>
-            </div>
-            <div class="icons">
-               <li>
-                  <form action="." method="post">
-                     <input
-                        type="text"
-                        class="search-txt"
-                        placeholder="search"
-                     />
-                     <button class="search-btn" type="submit">
-                        <i class="fas fa-search"></i>
-                     </button>
-                  </form>
-               </li>
+            <a class="menu-trigger" href="#">
+               <span></span>
+               <span></span>
+               <span></span>
+            </a>
+
+            <div class="fullscreen" id="fullscreen">
+               <nav class="fullscreen-menu">
+                  <ul>
+                     <li><a href="sub1_main.html">ABOUT US</a></li>
+                     <li><a href="sub2_main.html">TOUR</a></li>
+                     <li class="on">
+                        <a href="sub3_main.html">VISIT KOREA</a>
+                     </li>
+                     <li><a href="sub4_main.html">CONTACT</a></li>
+                  </ul>
+               </nav>
             </div>
          </nav>
 
          <!-- 내용 -->
          <div class="cont">
             <!-- 왼쪽 이미지 -->
-            <div class="cont-left">
-               <div class="left-img">
-                  <div class="img">
-                     <a href=""
-                        ><img src="../imgs/photo/경복궁.jpg" alt="경복궁"
-                     /></a>
-                     <div class="itext">경복궁</div>
-                  </div>
-
-                  <div class="img">
-                     <a href=""
-                        ><img
-                           src="../imgs/photo/감천문화마을.jfif"
-                           alt="감천문화마을"
-                     /></a>
-                     <div class="itext">감천문화마을</div>
-                  </div>
-
-                  <div class="img">
-                     <a href=""
-                        ><img
-                           src="../imgs/photo/성산일출봉.jpg"
-                           alt="성산일출봉"
-                     /></a>
-                     <div class="itext">성산일출봉</div>
-                  </div>
-               </div>
-            </div>
+            <div class="cont-left"></div>
 
             <!-- 중앙 -->
             <div class="cont-mid">
-               <!-- 지역 이미지 및 설명 -->
-               <!-- <div class="mid-top">
-                  <div class="region">
-                     <div class="region-img"></div>
-                     <div class="region-name"></div>
-                     <div class="region-info"></div>
-                  </div>
-               </div> -->
-
-               <!-- 지도 -->
-               <!-- <canvas id="myCanvas"></canvas> -->
-               <!-- <div class="mid-bottom"></div> -->
                <div class="map">
                   <img
                      src="../imgs/color/korea_map_color.png"
@@ -154,28 +113,7 @@
             </div>
 
             <!-- 오른쪽 이미지 -->
-            <div class="cont-right">
-               <div class="right-img">
-                  <div class="img">
-                     <a href=""><img src="../imgs/photo/명동.jfif" alt="" /></a>
-                     <div class="itext">명동</div>
-                  </div>
-
-                  <div class="img">
-                     <a href=""
-                        ><img src="../imgs/photo/창덕궁.jfif" alt=""
-                     /></a>
-                     <div class="itext">창덕궁</div>
-                  </div>
-
-                  <div class="img">
-                     <a href=""
-                        ><img src="../imgs/photo/롯데월드.jfif" alt=""
-                     /></a>
-                     <div class="itext">롯데월드</div>
-                  </div>
-               </div>
-            </div>
+            <div class="cont-right"></div>
          </div>
       </div>
    </body>
