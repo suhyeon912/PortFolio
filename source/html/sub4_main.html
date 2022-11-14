@@ -20,6 +20,18 @@
          sizes="16x16"
       />
       <title>CONTACT</title>
+      <script>
+         window.addEventListener("DOMContentLoaded", () => {
+             const ham = document.querySelector(".ham");
+             ham.onclick = () => {
+                 // 햄버거버튼에 클래스 on넣기/빼기
+                 ham.classList.toggle("on");
+                 // GNB박스에 클래스 on넣기/빼기
+                 gnb.classList.toggle("on");
+             };
+             const gnb = document.querySelector(".gnb");
+         });
+     </script>
    </head>
    <body>
       <div class="grid-cont">
@@ -32,26 +44,20 @@
                      alt=""
                /></a>
             </div>
-            <div class="nav">
-               <li><a href="sub1_main.html">ABOUT US</a></li>
-               <li><a href="sub2_main.html">TOUR</a></li>
-               <li><a href="sub3_main.html">VISIT KOREA</a></li>
-               <li class="on"><a href="sub4_main.html">CONTACT</a></li>
-            </div>
-            <div class="icons">
-               <li>
-                  <form action="." method="post">
-                     <input
-                        type="text"
-                        class="search-txt"
-                        placeholder="search"
-                     />
-                     <button class="search-btn" type="submit">
-                        <i class="fas fa-search"></i>
-                     </button>
-                  </form>
-               </li>
-            </div>
+            <div class="ham">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+
+           <nav class="gnb">
+               <ul>
+                   <li><a href="sub1_main.html">ABOUT US</a></li>
+                   <li><a href="sub3_main copy.html">VISIT KOREA</a></li>
+                   <li><a href="sub4_main.html">CONTACT</a></li>
+               </ul>
+           </nav>
+            
          </nav>
       </div>
    </body>
