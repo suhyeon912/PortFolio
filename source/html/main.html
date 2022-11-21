@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./css/main.css" type="text/css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <link rel="shortcut icon" href="#" />
-      <link
-         rel="icon"
-         href="../imgs/favicon.ico"
-         type="image/x-icon"
-         sizes="16x16"
-      />
-      <title>MAIN</title>
-      <script>
-         window.addEventListener("DOMContentLoaded", () => {
-             const ham = document.querySelector(".ham");
-             ham.onclick = () => {
-                 // 햄버거버튼에 클래스 on넣기/빼기
-                 ham.classList.toggle("on");
-                 // GNB박스에 클래스 on넣기/빼기
-                 gnb.classList.toggle("on");
-             };
-             const gnb = document.querySelector(".gnb");
-         });
-     </script>
-   </head>
-   <body>
-      <div class="grid-cont">
-         <!-- 상단 -->
-         <nav class="top">
-            <div class="logo">
-               <a href="main.html"
-                  ><img
-                     src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
-                     alt=""
-               /></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <link rel="shortcut icon" href="#" />
+        <link
+            rel="icon"
+            href="../imgs/favicon.ico"
+            type="image/x-icon"
+            sizes="16x16"
+        />
+        <title>MAIN</title>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                const ham = document.querySelector(".ham");
+                ham.onclick = () => {
+                    // 햄버거버튼에 클래스 on넣기/빼기
+                    ham.classList.toggle("on");
+                    // GNB박스에 클래스 on넣기/빼기
+                    gnb.classList.toggle("on");
+                };
+                const gnb = document.querySelector(".gnb");
+            });
+        </script>
+    </head>
+    <body>
+        <div class="grid-cont">
+            <!-- 상단 -->
+            <nav class="top">
+                <div class="logo">
+                    <a href="main.html"
+                        ><img
+                            src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
+                            alt=""
+                    /></a>
+                </div>
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="sub1_main.html">ABOUT US</a></li>
+                        <li><a href="sub3_main copy.html">VISIT KOREA</a></li>
+                        <li><a href="sub4_main.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </nav>
+
+            <div class="cont">
+                <div class="slider-1">
+                    <div class="slides">
+                        <div
+                            class="active"
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EA%B2%BD%EB%B3%B5%EA%B6%81_main.jpg?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/N%EC%84%9C%EC%9A%B8%ED%83%80%EC%9B%8C_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/DDP_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EC%A0%84%EC%A3%BC%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%ED%95%B4%EC%9A%B4%EB%8C%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EC%B2%A8%EC%84%B1%EB%8C%80_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EA%B0%90%EC%B2%9C%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                        <div
+                            style="
+                                background-image: url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89_main.jfif?auto=compress,format);
+                            "
+                        ></div>
+                    </div>
+                </div>
+
+                <!-- <a href="" class="main_img1"><img src="../imgs/photo/경복궁_main.jpg" alt=""></a> -->
             </div>
-            <div class="ham">
-               <span></span>
-               <span></span>
-               <span></span>
-           </div>
-
-           <nav class="gnb">
-               <ul>
-                   <li><a href="sub1_main.html">ABOUT US</a></li>
-                   <li><a href="sub3_main copy.html">VISIT KOREA</a></li>
-                   <li><a href="sub4_main.html">CONTACT</a></li>
-               </ul>
-           </nav>
-            
-         </nav>
-
-         <div class="cont">
-            <div class="active" style="background-image:url(https://github.com/suhyeon912/PortFolio/blob/main/source/imgs/photo/%EA%B2%BD%EB%B3%B5%EA%B6%81_main.jpg?auto=compress,format);"></div>
-            
-            <!-- <a href="" class="main_img1"><img src="../imgs/photo/경복궁_main.jpg" alt=""></a> -->
-         </div>
-      </div>
-   </body>
+        </div>
+    </body>
 </html>
 
 <!-- https://codepen.io/kimyangsun/pen/XWJeJVj 이미지 슬라이드 참고 사이트 -->
