@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import url(../css/core.css);
+@import url(../css/grid.css);
+@import url(../css/media.css);
+@import url(../css/reset.css);
+@import url(../css/hamburger.css);
+
+.main_img1 img{
+    max-height: 880px;
+    opacity: 80%;
+}
