@@ -13,9 +13,6 @@
   position: absolute;
   width: 80%;
   height: 4.5px;
-  background-color: rgb(50, 50, 50);
-  box-shadow: 1px 1px 1px rgb(50, 50, 50);
-  border: 1.5px solid rgb(50, 50, 50);
   /* 트랜지션 */
   transition: 0.3s;
 }
@@ -23,19 +20,27 @@
 .ham.on span:nth-child(1), .ham.on span:nth-child(3){
   box-shadow: 1px 1px 1px white;
   border: 1.5px solid white;
-  background-color: white;
 }
 
 /* 햄버거 span바 초기셋팅 */
 .ham span:nth-child(1) {
   top: 0px;
+  background-color: lightgreen;
+  border: 1.5px solid lightgreen;
+  box-shadow: 1px 1px 1px lightgreen;
 }
 .ham span:nth-child(2) {
   top: 20px;
   left: 0;
+  background-color: lightcoral;
+  border: 1.5px solid lightcoral;
+  box-shadow: 1px 1px 1px lightcoral;
 }
 .ham span:nth-child(3) {
   top: 40px;
+  background-color: lightskyblue;
+  border: 1.5px solid lightskyblue;
+  box-shadow: 1px 1px 1px lightskyblue;
 }
 /* 햄버거 마우스 오버시 중앙바변경 */
 .ham:hover span:nth-child(2) {
@@ -50,6 +55,7 @@
 .ham.on span:nth-child(2) {
   width: 0;
   left: 50%;
+  display: none;
 }
 .ham.on span:nth-child(3) {
   transform: rotate(-45deg);
@@ -63,7 +69,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgb(32, 32, 32);
   z-index: 9999;
   /* 트랜지션 */
   transition: top 0.5s ease-out;

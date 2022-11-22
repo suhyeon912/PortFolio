@@ -35,8 +35,8 @@ a {
 }
 
 .slider-1 > .page-btns > div {
-    width:20px;
-    height:20px;
+    width:15px;
+    height:15px;
     background-color:rgba(255,255,255,.5);
     border-radius:4px;
     display:inline-block;
@@ -64,7 +64,7 @@ a {
 }
 
 .slider-1 > .slides > div.active {
-    opacity:83%;
+    opacity:75%;
 }
 
 /* 슬라이더 좌우 버튼 */
