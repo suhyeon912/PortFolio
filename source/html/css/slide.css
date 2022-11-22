@@ -21,7 +21,7 @@ a {
 
 /* 슬라이더 1 시작 */
 .slider-1 {
-    height:400px;
+    /* height:400px; */
     position:relative;
 }
 
@@ -60,10 +60,11 @@ a {
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
+    /* backface-visibility: hidden; */
 }
 
 .slider-1 > .slides > div.active {
-    opacity:1;
+    opacity:83%;
 }
 
 /* 슬라이더 좌우 버튼 */
@@ -93,4 +94,8 @@ a {
 .slider-1 >.side-btns > div:last-child > span {
     left:auto;
     right:20px;
+}
+
+.slides{
+    image-rendering: pixelated;
 }
