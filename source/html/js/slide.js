@@ -50,4 +50,4 @@ $('.slider-1 > .side-btns > div').click(function(){
 
 setInterval(function(){
     $('.slider-1 > .side-btns > div').eq(1).click();
-}, 3000);
+}, 3700);

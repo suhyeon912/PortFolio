@@ -1,6 +1,20 @@
 @charset "utf-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
+@font-face {
+   font-family: 'UhBeeSeulvely';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'UhBeenamsoyoung';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeenamsoyoung.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
 /* 초기화 CSS - reset.css */
 /* 기본셋팅된 요소디자인 초기화 */
 
@@ -23,16 +37,19 @@ dd {
    padding: 0;
    font-family: "Pretendard";
 }
+
 /* ul,ol 블릿없앰 */
 ul,
 ol {
    list-style: none;
 }
+
 /* a - 글자색, 밑줄없앰 */
 a {
    color: #222;
    text-decoration: none;
 }
+
 /* 이미지관련 */
 img {
    border: none;

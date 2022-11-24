@@ -56,15 +56,18 @@ a {
     right:0;
     bottom:0;
     opacity:0;
-    transition: opacity 0.3s;
+    transition: opacity 0.65s;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 100%);
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
+    image-rendering:-webkit-optimize-contrast;
 }
 
 .slider-1 > .slides > div.active {
-    opacity:75%;
+    opacity:100%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 47%);
 }
 
 /* 슬라이더 좌우 버튼 */
@@ -94,8 +97,4 @@ a {
 .slider-1 >.side-btns > div:last-child > span {
     left:auto;
     right:20px;
-}
-
-.slides{
-    image-rendering: pixelated;
 }
