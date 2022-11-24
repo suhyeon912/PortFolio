@@ -11,17 +11,16 @@ body {
 }
 
 .grid-cont {
-   display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: max-content;
    /* gap: 2.5px; */
    height: 100%;
    width: 100%;
+   display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: max-content;
 }
 
 .top {
    display: grid;
-
    grid-column-start: 1;
    grid-column-end: 4;
    grid-template-columns: 1fr 2fr 1fr;
@@ -34,7 +33,7 @@ body {
 .cont {
    display: grid;
    height: 100%;
+   margin-top: 2.5px;
    grid-column-start: 1;
    grid-column-end: 4;
-   margin-top: 2.5px;
 }
