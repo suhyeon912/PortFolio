@@ -78,7 +78,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(32, 32, 32, 0.7);
   z-index: 9999;
   /* 트랜지션 */
   transition: top 0.5s ease-out;

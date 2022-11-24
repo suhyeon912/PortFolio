@@ -27,7 +27,8 @@ body {
    grid-template-columns: 1fr 2fr 1fr;
    height: 8vh;
    /* background: white; */
-   margin-top: 2.5px;
+   margin-top: 5px;
+   padding-bottom: 5px;
 }
 
 .cont {
@@ -35,4 +36,5 @@ body {
    height: 100%;
    grid-column-start: 1;
    grid-column-end: 4;
+   margin-top: 2.5px;
 }
