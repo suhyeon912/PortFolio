@@ -21,7 +21,6 @@ body {
 
 .top {
    display: grid;
-   place-items: center;
 
    grid-column-start: 1;
    grid-column-end: 4;

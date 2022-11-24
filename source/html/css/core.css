@@ -7,7 +7,9 @@ a {
 }
 
 .logo {
-   width: 3fr;
+   position: fixed;
+   left: 2.7%;
+   width: fit-content;
 }
 
 .logo a img {
@@ -18,7 +20,6 @@ a {
 
 .nav li {
    list-style: none;
-   float: left;
    /* z-index: 2000; */
 }
 
@@ -26,7 +27,7 @@ a {
    margin: 0 13px;
 }
 
-.nav > li > a:hover {
+.nav>li>a:hover {
    /* color: white; */
    /* background: white; */
    /* opacity: 20%; */
@@ -36,12 +37,13 @@ a {
    font-weight: 700;
 }
 
-.nav > li.on > a {
+.nav>li.on>a {
    color: white;
    /* z-index: 1; */
    font-weight: 700;
 }
-.nav > li.on > a:hover {
+
+.nav>li.on>a:hover {
    color: white;
    /* z-index: 1; */
    /* font-weight: bold; */
