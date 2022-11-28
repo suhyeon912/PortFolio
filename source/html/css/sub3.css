@@ -4,53 +4,12 @@
 @import url(../css/media.css);
 @import url(../css/reset.css);
 @import url(../css/hamburger.css);
-@import url(../card-flip-effect-test.css);
-
-#myCanvas:hover{
-   border: 1px solid black;
-}
-
-html,
-body {
-   position: absolute;
-   /* max-height: 959px; */
-   /* min-height: 950px; */
-   height: 100%;
-   width: 100%;
-   text-align: center;
-   font-size: 20px;
-   overflow: hidden;
-}
-
-.grid-cont {
-   display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: max-content;
-   /* gap: 2.5px; */
-   height: 100%;
-   width: 100%;
-   background: rgb(177, 177, 177);
-
-   /* grid-template-areas: 
-  "logo nav search"
-  ""; */
-}
-
-.top {
-   display: grid;
-   place-items: center;
-
-   grid-column-start: 1;
-   grid-column-end: 4;
-   grid-template-columns: 1fr 2fr 1fr;
-   height: 8vh;
-   /* background: white; */
-   margin: 5px 2.5px 0 2.5px;
-}
+@import url(../css/card-flip-effect.css);
 
 .cont {
    display: grid;
-   height: 100%;
+   height: 100vh;
+   width: 100vw;
    grid-column-start: 1;
    grid-column-end: 4;
    grid-template-columns: 1fr 2fr 1fr;
@@ -60,20 +19,12 @@ body {
 .cont-left,
 .cont-right {
    display: grid;
+   height: 91vh;
+   width: 100vw;
    padding: 2.5px;
-   grid-template-rows: 2fr 2fr 2fr;
-   padding-bottom: 2.5px;
-   max-width: 280px;
-}
-
-.img,
-.img img,
-.flip-card-inner {
-   object-fit: cover;
-   height: 100%;
-   width: 100%;
-   /* max-width: 280px;
-   max-height: 300px; */
+   grid-template-rows: 1fr 1fr 1fr;
+   margin-bottom: 2.5px;
+   max-width: 290px;
 }
 
 .cont-mid,
@@ -97,6 +48,7 @@ body {
    margin: 2.5px;
    padding: 2.5px;
    background: lightgray;
+   border-radius: 20px;
 }
 
 .region-img {
@@ -112,6 +64,7 @@ body {
 .region-info {
    grid-area: info;
    background: white;
+   border-radius: 20px;
    font-size: 16px;
    text-align: left;
    display: grid;
