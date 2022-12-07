@@ -5,6 +5,7 @@
 @import url(../css/reset.css);
 @import url(../css/hamburger.css);
 @import url(../css/card-flip-effect.css);
+@import url(../css/combobox.css);
 
 .cont {
    display: grid;
