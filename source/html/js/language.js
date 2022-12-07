@@ -45,3 +45,16 @@ document.getElementById("btn-en").addEventListener("click", (e) => {
 document.getElementById("btn-ko").addEventListener("click", (e) => {
     render("ko");
 });
+
+function changeSelection() {
+    var selectedElement = document.getElementById("selectBoxTest");
+
+    var optionVal = selectedElement.options[selectedElement.selectedIndex].value;
+    var optionTxt = selectedElement.options[selectedElement.selectedIndex].text;
+
+    // var selectedElement = $(obj).val();
+    if (optionTxt == "btn-kor") {
+        render("ko");
+        alert("한국어");
+    }
+}
