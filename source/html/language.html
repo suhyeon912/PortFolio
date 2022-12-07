@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Document</title>
-        <script defer src="./js/language.js"></script>
-    </head>
 
-    <body>
-        <h1 id="flip_title" data-lang="flip_title">[flip_title]</h1>
-        <p id="flip_content" data-lang="flip_content">[flip_content]</p>
-        <p id="language">
-            <span data-lang="now_sys_lang">[now-sys-lang]</span> :
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script defer src="./js/language.js"></script>
+</head>
+
+<body>
+    <h1 id="flip_title" data-lang="flip_title">[flip_title]</h1>
+    <p id="flip_content" data-lang="flip_content">[flip_content]</p>
+    <p id="language">
+        <span data-lang="now_sys_lang">[now-sys-lang]</span> :
+        <span id="locale"></span>
+    </p>
+    <button id="btn-en">English</button> <button id="btn-ko">한국어</button>
+
+    <form>
+        <select name="selectbox" id="selectbox" onchange="changeSelection()">
+            <option value="" selected disabled>Language 🌐</option>
             <span id="locale"></span>
-        </p>
-        <button id="btn-en">English</button> <button id="btn-ko">한국어</button>
+            <option value="btn-kor">한국어</option>
+            <option value="btn-eng">English</option>
+        </select>
+    </form>
+</body>
 
-        <form>
-            <select
-                name="language"
-                id="language"
-                onchange="changeSelection()"
-            >
-                <option value="" selected disabled>Language 🌐</option>
-                <span id="locale"></span>
-                <option value="btn-kor">한국어</option>
-                <option value="btn-eng">English</option>
-            </select>
-        </form>
-    </body>
 </html>
