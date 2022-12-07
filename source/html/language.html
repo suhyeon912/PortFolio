@@ -3,101 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <title>Document</title>
-
-        <script>
-            // 언어별 JSON 파일 (간략화)
-            const lang = {
-                en: {
-                    flip_title: "Gyeongbokgung Palace",
-                    flip_content:
-                        "Gyeongbokgung Palace is the best Buddhist palace in the Joseon Dynasty. It is located leaning against Bukaksan Mountain to the north, and a wide Yukjo Street (now Sejong-ro) spreads out in front of Gwanghwamun, the main gate, which is also the center of the city plan for Hanyang (Seoul), the royal road. It was founded by King Taejo Lee Seong-gye in 1395, burned down by the Japanese Invasion of Korea in 1592, and rebuilt in 1867 during King Gojong's reign. The reconstructed Gyeongbokgung Palace, led by Heungseon Daewongun, looked magnificent with more than 500 buildings lined up like a maze.",
-                },
-                ko: {
-                    flip_title: "경복궁",
-                    flip_content:
-                        "경복궁은 조선 왕조 제일의 법궁입니다. 북으로 북악산을 기대어 자리 잡았고 정문인 광화문 앞으로는 넓은 육조거리(지금의 세종로)가 펼쳐져, 왕도인 한양(서울) 도시 계획의 중심이기도 합니다. 1395년 태조 이성계가 창건하였고, 1592년 임진 왜란으로 불타 없어졌다가, 고종 때인 1867년 중건 되었습니다. 흥선대원군이 주도한 중건된 경복궁은 500여 동의 건물들이 미로같이 빼곡히 들어선 웅장한 모습 이었습니다.",
-                },
-            };
-
-            // ** 현재 브라우저의 언어 가져오기 **
-            function getLanguage() {ㄴ
-                return navigator.language || navigator.userLanguage;
-            }
-
-            // 언어별 적용
-            function init(localeStr) {
-                document.getElementById("locale").textContent = localeStr;
-            }
-
-            // 초기 작업
-            const currentLang = getLanguage();
-            init(currentLang);
-            render(currentLang.substr(0, 2));
-
-            // 언어별 렌더링
-            function render(locale) {
-                const $lang = document.querySelectorAll("[data-lang]");
-                $lang.forEach((el) => {
-                    const code = el.dataset.lang;
-                    el.textContent = lang[locale][code];
-                });
-            }
-
-            function changeSelection(obj) {
-                // var selectedElement = document.getElementById("selectBoxTest");
-
-                // var optionVal = selectedElement.options[selectedElement.selectedIndex].value;
-                // var optionTxt = selectedElement.options[selectedElement.selectedIndex].text;
-
-                var selectedElement = $(obj).val();
-                if ($(obj).val() == "한국어") {
-                    render("ko");
-                    alert("한국어");
-                }
-            }
-
-            // // 버튼 이벤트
-            // document.getElementById("btn-en").addEventListener("click", (e) => {
-            //     render("en");
-            // });
-            // document.getElementById("btn-ko").addEventListener("click", (e) => {
-            //     render("ko");
-            // });
-        </script>
+        <script defer src="./js/language.js"></script>
     </head>
 
     <body>
-        <!-- <h1 id="title" data-lang="title">[title]</h1>
-        <p id="content" data-lang="content">[content]</p>
+        <h1 id="flip_title" data-lang="flip_title">[flip_title]</h1>
+        <p id="flip_content" data-lang="flip_content">[flip_content]</p>
         <p id="language">
             <span data-lang="now_sys_lang">[now-sys-lang]</span> :
             <span id="locale"></span>
-        </p> -->
-        <!-- <button id="btn-en">English</button>
-        <button id="btn-ko">한국어</button> -->
-        <div id="flip_title" class="flip_title" data-lang="flip_title">
-            [flip_title]
-        </div>
-        <div id="flip_content" class="flip_content" data-lang="flip_content">
-            [flip_content]
-        </div>
-        <form>
-            <select
-                name="language"
-                id="language"
-                onchange="changeSelection(this)"
-            >
-                <option value="" selected disabled>Language 🌐</option>
-                <span id="locale"></span>
-                <option value="한국어">한국어</option>
-                <option value="btn-en">English</option>
-            </select>
-        </form>
+        </p>
+        <button id="btn-en">English</button> <button id="btn-ko">한국어</button>
+        
     </body>
 </html>
-
-<!-- https://chironsoft.tistory.com/17
-    https://dion-ko.tistory.com/72
-    https://blog.devez.net/ko/394
-    http://yoonbumtae.com/?p=2469
-    https://webisfree.com/2018-05-25/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%84%A4%EC%A0%95-%EC%96%B8%EC%96%B4-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%96%B8%EC%96%B4-%ED%99%95%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-navigator -->
