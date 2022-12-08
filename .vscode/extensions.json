@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "HookyQR.beautify"
+        "hookyqr.beautify",
+        "ritwickdey.liveserver"
     ]
 }
