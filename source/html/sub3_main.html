@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./css/sub3.css" type="text/css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
-      <link rel="shortcut icon" href="#" />
-      <link
-         rel="icon"
-         href="../imgs/favicon.ico"
-         type="image/x-icon"
-         sizes="16x16"
-      />
-      <title>CONTACT</title>
-      <script>
-         window.addEventListener("DOMContentLoaded", () => {
-             const ham = document.querySelector(".ham");
-             ham.onclick = () => {
-                 // 햄버거버튼에 클래스 on넣기/빼기
-                 ham.classList.toggle("on");
-                 // GNB박스에 클래스 on넣기/빼기
-                 gnb.classList.toggle("on");
-             };
-             const gnb = document.querySelector(".gnb");
-         });
-     </script>
-   </head>
-   <body>
-      <div class="grid-cont">
-         <!-- 상단 -->
-         <nav class="top">
-            <div class="logo">
-               <a href="main.html"
-                  ><img
-                     src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
-                     alt=""
-               /></a>
-            </div>
-            <div class="ham">
-               <span></span>
-               <span></span>
-               <span></span>
-           </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sub3.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="icon"
+      href="../imgs/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <title>CONTACT</title>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const ham = document.querySelector(".ham");
+        ham.onclick = () => {
+          // 햄버거버튼에 클래스 on넣기/빼기
+          ham.classList.toggle("on");
+          // GNB박스에 클래스 on넣기/빼기
+          gnb.classList.toggle("on");
+        };
+        const gnb = document.querySelector(".gnb");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="grid-cont">
+      <!-- 상단 -->
+      <nav class="top">
+        <div class="logo">
+          <a href="main.html"
+            ><img
+              src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-           <nav class="gnb">
-               <ul>
-                   <li><a href="main.html">MAIN</a></li>
-                        <li><a href="sub1_main.html">ABOUT US</a></li>
-                        <li><a href="sub2_main.html">VISIT KOREA</a></li>
-               </ul>
-           </nav>
-            
-         </nav>
-      </div>
-   </body>
+        <nav class="gnb">
+          <ul>
+            <li><a href="main.html">MAIN</a></li>
+            <li><a href="sub1_main.html">ABOUT US</a></li>
+            <li><a href="sub2_main.html">VISIT KOREA</a></li>
+            <form>
+              <select
+                name="selectbox"
+                id="selectbox"
+                onchange="changeSelection()"
+              >
+                <option value="" selected disabled>Language 🌐</option>
+                <span id="locale"></span>
+                <option value="btn-kor">한국어</option>
+                <option value="btn-eng">English</option>
+              </select>
+            </form>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+  </body>
 </html>
