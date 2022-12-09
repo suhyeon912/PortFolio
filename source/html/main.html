@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,7 +31,8 @@
                 const gnb = document.querySelector(".gnb");
             });
         </script>
-
+        <script type="text/javascript" defer src="./js/slide.js"></script>
+        <script type="text/javascript" src="./js/language.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link
             rel="stylesheet"
@@ -39,8 +40,6 @@
             integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
             crossorigin="anonymous"
         />
-        <script type="text/javascript" defer src="./js/slide.js"></script>
-        <!-- <script type="text/javascript" defer src="./js/social_media_icon.js"></script> -->
     </head>
     <body>
         <div class="grid-cont">
@@ -61,17 +60,33 @@
 
                 <nav class="gnb">
                     <ul>
-                        <li><a href="main.html" data-lang="">MAIN</a></li>
-                        <li><a href="sub1_main.html">ABOUT US</a></li>
-                        <li><a href="sub2_main.html">VISIT KOREA</a></li>
+                        <li>
+                            <a href="main.html" data-lang="gnb_1">[gnb_1]</a>
+                        </li>
+                        <li>
+                            <a href="sub1_main.html" data-lang="gnb_2"
+                                >[gnb_2]</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sub2_main.html" data-lang="gnb_3"
+                                >[gnb_3]</a
+                            >
+                        </li>
                         <form>
-                        <select name="selectbox" id="selectbox" onchange="changeSelection()">
-                            <option value="" selected disabled>Language 🌐</option>
-                            <span id="locale"></span>
-                            <option value="btn-kor">한국어</option>
-                            <option value="btn-eng">English</option>
-                        </select>
-                    </form>
+                            <select
+                                name="selectbox"
+                                id="selectbox"
+                                onchange="changeSelection()"
+                            >
+                                <option value="" selected disabled>
+                                    Language 🌐
+                                </option>
+                                <span id="locale"></span>
+                                <option value="btn-kor">한국어</option>
+                                <option value="btn-eng">English</option>
+                            </select>
+                        </form>
                     </ul>
                 </nav>
             </div>
