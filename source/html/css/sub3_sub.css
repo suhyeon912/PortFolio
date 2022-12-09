@@ -57,17 +57,23 @@
    grid-area: region-img;
    display: grid;
    place-items: center;
+   font-family: "Pretendard";
+   padding-top: 12.5%;
 }
 
 .region-name {
    grid-area: region-name;
+   font-size: 3.5vh;
+   font-weight: 700;
+   
 }
 
 .region-info {
    grid-area: info;
    background: white;
    border-radius: 20px;
-   font-size: 16px;
+   font-size: 2vh;
+   font-weight: 500;
    text-align: left;
    display: grid;
    place-items: center;

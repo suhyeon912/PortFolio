@@ -1,8 +1,11 @@
+@import url(./reset.css);
+
 .flip-card {
   background-color: transparent;
   height: 100%;
   perspective: 1000px;
 }
+
 /* 
 .img-margin
 {
@@ -45,21 +48,23 @@
   transform: rotateY(180deg);
   overflow-y: auto;
   overflow-x: hidden;
+  font-family: "Pretendard";
 }
 
-.flip-card-back > div:nth-of-type(1){
+.flip-card-back>div:nth-of-type(1) {
   font-size: 3.4vh;
   font-weight: bold;
   margin: 1.5% 0 1% 0;
 }
 
-.flip-card-back > div:nth-of-type(2){
+.flip-card-back>div:nth-of-type(2) {
   font-size: 2.3vh;
   line-height: 1.5;
   margin: 0 5% 0 5%;
   float: left;
+  font-weight: 500;
 }
 
-#locale{
+#locale {
   display: none;
 }
