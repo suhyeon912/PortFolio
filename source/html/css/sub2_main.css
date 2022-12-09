@@ -15,12 +15,20 @@
    border-image-slice: 1;
 }
 
-.cont-mid{
+.cont-mid {
    height: 100vh;
    width: 100vw;
+   display: grid;
+
+
 }
 
-/* .map img{
+/* .map {
+   padding-top: 5%;
+
+}
+
+.map img{
    max-width: 680px;
    width: 100%;
    height: 100%;

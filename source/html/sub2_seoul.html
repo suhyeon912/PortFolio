@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VISIT KOREA</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+        <link rel="stylesheet" href="./css/sub3_sub.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="#" />
+        <link
+            rel="icon"
+            href="../imgs/favicon.ico"
+            type="image/x-icon"
+            sizes="16x16"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+        />
+        <style>
+            canvas {
+                pointer-events: none;
+                position: absolute;
+            }
+        </style>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                const ham = document.querySelector(".ham");
+                ham.onclick = () => {
+                    // 햄버거버튼에 클래스 on넣기/빼기
+                    ham.classList.toggle("on");
+                    // GNB박스에 클래스 on넣기/빼기
+                    gnb.classList.toggle("on");
+                };
+                const gnb = document.querySelector(".gnb");
+            });
+        </script>
+        <script defer src="./js/language.js"></script>
+    </head>
+
+    <body>
+        <div class="grid-cont">
+            <!-- 상단 -->
+            <nav class="top">
+                <div class="logo">
+                    <a href="main.html"
+                        ><img
+                            src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
+                            alt=""
+                    /></a>
+                </div>
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="main.html" data-lang="gnb_1">[gnb_1]</a>
+                        </li>
+                        <li>
+                            <a href="sub1_main.html" data-lang="gnb_2"
+                                >[gnb_2]</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sub2_main.html" data-lang="gnb_3"
+                                >[gnb_3]</a
+                            >
+                        </li>
+                        <form>
+                            <select
+                                name="selectbox"
+                                id="selectbox"
+                                onchange="changeSelection()"
+                            >
+                                <option value="" selected disabled>
+                                    Language 🌐
+                                </option>
+                                <span id="locale"></span>
+                                <option value="btn-kor">한국어</option>
+                                <option value="btn-eng">English</option>
+                            </select>
+                        </form>
+                    </ul>
+                </nav>
+            </nav>
+
+            <!-- 내용 -->
+            <div class="cont">
+                <!-- 왼쪽 이미지 -->
+                <div class="cont-left">
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/경복궁_main.jpg"
+                                        alt="경복궁"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title1"
+                                        id="flip_title1"
+                                        data-lang="flip_title1"
+                                    >
+                                        [flip_title1]
+                                    </div>
+                                    <div
+                                        class="flip_content1"
+                                        id="flip_content1"
+                                        data-lang="flip_content1"
+                                    >
+                                        [flip_content1]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner img-margin">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/N서울타워.jfif"
+                                        alt="N서울타워"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title2"
+                                        id="flip_title2"
+                                        data-lang="flip_title2"
+                                    >
+                                        [flip_title2]
+                                    </div>
+                                    <div
+                                        class="flip_content2"
+                                        id="flip_content2"
+                                        data-lang="flip_content2"
+                                    >
+                                        [flip_content2]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/북촌한옥마을.jfif"
+                                        alt="북촌한옥마을"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title3"
+                                        id="flip_title3"
+                                        data-lang="flip_title3"
+                                    >
+                                        [flip_title3]
+                                    </div>
+                                    <div
+                                        class="flip_content3"
+                                        id="flip_content3"
+                                        data-lang="flip_content3"
+                                    >
+                                        [flip_content3]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 중앙 -->
+                <div class="cont-mid">
+                    <!-- 지역 이미지 및 설명 -->
+                    <div class="mid-top">
+                        <div class="region">
+                            <div class="region-img">
+                                <img
+                                    src="https://suhyeon912.github.io/PortFolio/source/imgs/color/%EC%84%9C%EC%9A%B8.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="region-name" data-lang="region_name">
+                                [region_name]
+                            </div>
+                            <div class="region-info" data-lang="region_info">
+                                [region_info]
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 지도 -->
+                    <!-- <canvas id="myCanvas"></canvas> -->
+                    <div class="mid-bottom">
+                        <div class="map">
+                            <img
+                                src="https://suhyeon912.github.io/PortFolio/source/imgs/sub4/%EC%84%9C%EC%9A%B8_trans.png"
+                                usemap="#seoul-map"
+                            />
+
+                            <map name="seoul-map">
+                                <area
+                                    target=""
+                                    alt="강서구"
+                                    title="강서구"
+                                    href="javascript:void(0);"
+                                    coords="35,124,30,129,34,142,16,159,8,171,1,188,12,195,26,198,28,213,38,200,55,205,64,194,70,203,76,221,98,217,97,199,98,190,108,194,115,195,111,186,90,168,62,151"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="양천구"
+                                    title="양천구"
+                                    href="javascript:void(0);"
+                                    coords="64,195,56,205,58,215,62,220,58,231,60,242,66,242,69,250,78,246,88,241,97,247,105,248,115,233,114,220,123,216,125,210,115,195,98,191,98,217,76,220"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="구로구"
+                                    title="구로구"
+                                    href="javascript:void(0);"
+                                    coords="64,242,57,255,47,257,47,263,56,267,48,288,66,283,71,288,79,287,83,277,89,277,103,262,111,270,118,273,123,280,133,279,138,272,132,269,128,261,126,242,116,235,106,248,98,248,88,243,71,250"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="영등포구"
+                                    title="영등포구"
+                                    href="javascript:void(0);"
+                                    coords="111,184,144,207,168,213,182,230,162,235,155,256,147,259,138,272,130,263,127,243,114,234,113,220,123,215,125,209"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="금천구"
+                                    title="금천구"
+                                    href="javascript:void(0);"
+                                    coords="111,270,107,277,119,297,122,304,120,309,130,316,135,326,141,339,149,330,155,328,157,320,164,317,150,308,148,298,143,291,146,285,142,280,124,280"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="관악구"
+                                    title="관악구"
+                                    href="javascript:void(0);"
+                                    coords="139,272,133,278,144,280,143,289,150,297,151,306,163,315,167,324,171,328,173,336,182,331,191,330,201,326,200,320,210,319,217,310,222,304,222,295,217,290,215,285,207,286,197,277,195,262,190,265,183,264,177,264,168,264,163,260,159,265,148,270"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="동작구"
+                                    title="동작구"
+                                    href="javascript:void(0);"
+                                    coords="183,230,162,236,155,256,147,259,141,273,159,263,163,258,168,262,181,263,190,263,196,260,197,276,205,284,216,282,216,265,219,254,212,247"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="서초구"
+                                    title="서초구"
+                                    href="javascript:void(0);"
+                                    coords="209,244,220,253,216,284,223,305,232,302,232,296,238,297,242,306,249,311,257,310,268,298,271,330,277,335,286,345,305,340,308,328,317,328,324,321,329,309,320,285,313,286,299,294,286,295,285,289,275,274,267,274,250,222,242,232,229,241,223,244"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="강남구"
+                                    title="강남구"
+                                    href="javascript:void(0);"
+                                    coords="250,220,267,271,277,273,287,288,287,294,298,292,314,284,320,284,330,305,335,309,342,301,352,306,360,294,343,266,317,253,311,253,306,250,302,229,293,221,279,214,266,210,258,212"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="송파구"
+                                    title="송파구"
+                                    href="javascript:void(0);"
+                                    coords="301,226,306,248,311,251,343,266,360,293,369,294,368,286,375,287,387,275,396,265,396,254,387,248,381,249,376,242,379,233,356,220,358,206,352,201,343,214,332,225,319,228,308,228"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="강동구"
+                                    title="강동구"
+                                    href="javascript:void(0);"
+                                    coords="412,152,389,167,379,168,367,173,358,182,351,202,358,205,356,219,380,231,385,224,390,216,393,205,400,198,408,198,417,195,418,181,416,169"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="마포구"
+                                    title="마포구"
+                                    href="javascript:void(0);"
+                                    coords="117,140,109,154,95,159,148,200,158,200,168,203,179,212,182,210,187,207,192,199,197,193,196,182,186,183,177,184,170,186,162,181,162,175,152,170,138,160"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="은평구"
+                                    title="은평구"
+                                    href="javascript:void(0);"
+                                    coords="179,54,171,63,160,69,143,68,143,78,140,87,142,95,135,109,134,140,127,142,121,135,117,140,137,158,147,145,150,146,149,147,154,148,157,144,163,144,166,132,176,130,173,124,187,115,185,101,190,94,199,90,208,87,200,77,194,66,187,61,184,59,182,59"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="서대문구"
+                                    title="서대문구"
+                                    href="javascript:void(0);"
+                                    coords="187,117,174,124,176,130,166,133,164,143,158,144,150,148,138,157,151,169,163,173,163,180,170,186,195,181,203,175,190,157,192,146,193,136,189,129"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="종로구"
+                                    title="종로구"
+                                    href="javascript:void(0);"
+                                    coords="209,88,190,93,186,100,189,128,194,133,192,156,201,170,213,167,223,168,252,167,257,164,257,156,250,150,244,153,241,147,235,139,224,139,212,130,221,124,219,113,215,100,211,94"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="중구"
+                                    title="중구"
+                                    href="javascript:void(0);"
+                                    coords="202,169,205,174,195,181,196,187,203,184,223,187,231,193,236,190,242,196,251,187,251,181,257,180,260,173,257,165,250,167,233,168"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="용산구"
+                                    title="용산구"
+                                    href="javascript:void(0);"
+                                    coords="198,187,198,194,188,206,180,212,188,223,197,229,207,234,217,236,235,227,245,217,251,208,244,205,240,201,241,195,236,193,233,197,227,192,221,187,208,187,236,193,209,186,208,187"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="성북구"
+                                    title="성북구"
+                                    href="javascript:void(0);"
+                                    coords="219,82,210,88,214,93,221,124,212,130,223,139,235,138,241,146,243,153,249,152,257,156,274,138,275,130,281,134,285,128,295,127,296,123,295,127,305,119,305,110,298,111,287,102,281,106,266,118,263,112,259,116,247,109,241,100,228,91"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="동대문구"
+                                    title="동대문구"
+                                    href="javascript:void(0);"
+                                    coords="306,119,296,127,287,128,281,133,275,131,275,138,258,155,259,165,268,167,272,163,282,165,287,170,293,175,307,178,313,165,311,153,307,146,305,138,308,128"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="성동구"
+                                    title="성동구"
+                                    href="javascript:void(0);"
+                                    coords="266,166,260,169,262,172,259,180,252,182,251,188,244,195,244,202,252,207,263,199,272,205,294,213,308,179,293,174,283,165,277,164,273,163,270,166,266,166,260,167"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="강북구"
+                                    title="강북구"
+                                    href="javascript:void(0);"
+                                    coords="242,20,236,23,227,26,228,44,221,48,214,56,214,62,220,71,218,81,228,89,240,98,246,106,257,115,261,111,265,116,287,100,273,86,270,80,262,71,253,66,247,63,250,54,253,46,251,37,247,31"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="도봉구"
+                                    title="도봉구"
+                                    href="javascript:void(0);"
+                                    coords="253,0,243,7,242,19,252,37,253,44,247,62,259,68,272,80,277,88,285,72,290,76,290,61,286,47,283,38,286,30,286,18,285,10,278,8,268,12,262,3"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="노원구"
+                                    title="노원구"
+                                    href="javascript:void(0);"
+                                    coords="286,17,292,17,297,10,308,10,316,6,322,14,329,16,332,22,328,28,330,35,332,44,330,50,328,56,329,62,330,69,337,71,346,74,348,84,345,92,342,100,334,103,326,106,320,103,314,105,307,109,298,110,287,101,276,88,284,72,290,76,290,61,282,38,286,29"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                                <area
+                                    target=""
+                                    alt="중랑구"
+                                    title="중랑구"
+                                    href="javascript:void(0);"
+                                    coords="307,109,319,104,326,106,342,100,352,104,353,118,354,123,352,128,352,135,346,143,346,150,340,154,338,162,330,166,324,167,318,164,312,164,309,149,305,138,308,128,305,118"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                    class="seoul-junglang"
+                                />
+                                <area
+                                    target=""
+                                    alt="광진구"
+                                    title="광진구"
+                                    href="javascript:void(0);"
+                                    coords="313,163,294,213,301,218,312,220,321,220,333,212,342,201,347,189,349,180,340,182,338,176,339,170,341,166,338,163,325,168"
+                                    shape="poly"
+                                    id="seoul-map-area"
+                                />
+                            </map>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 이미지 -->
+                <div class="cont-right">
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/명동.jfif"
+                                        alt="명동"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title4"
+                                        id="flip_title4"
+                                        data-lang="flip_title4"
+                                    >
+                                        [flip_title4]
+                                    </div>
+                                    <div
+                                        class="flip_content4"
+                                        id="flip_content4"
+                                        data-lang="flip_content4"
+                                    >
+                                        [flip_content4]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner img-margin">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/창덕궁.jfif"
+                                        alt="창덕궁"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title5"
+                                        id="flip_title5"
+                                        data-lang="flip_title5"
+                                    >
+                                        [flip_title5]
+                                    </div>
+                                    <div
+                                        class="flip_content5"
+                                        id="flip_content5"
+                                        data-lang="flip_content5"
+                                    >
+                                        [flip_content5]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../imgs/photo/롯데월드.jfif"
+                                        alt="롯데월드"
+                                    />
+                                </div>
+                                <div class="flip-card-back">
+                                    <div
+                                        class="flip_title6"
+                                        id="flip_title6"
+                                        data-lang="flip_title6"
+                                    >
+                                        [flip_title6]
+                                    </div>
+                                    <div
+                                        class="flip_content6"
+                                        id="flip_content6"
+                                        data-lang="flip_content6"
+                                    >
+                                        [flip_content6]
+                                    </div>
+                                    <span id="locale"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
