@@ -13,6 +13,21 @@ const lang = {
         flip_content1:
             "Gyeongbokgung Palace is the best Buddhist palace in the Joseon Dynasty. It is located leaning against Bukaksan Mountain to the north, and a wide Yukjo Street (now Sejong-ro) spreads out in front of Gwanghwamun, the main gate, which is also the center of the city plan for Hanyang (Seoul), the royal road. It was founded by King Taejo Lee Seong-gye in 1395, burned down by the Japanese Invasion of Korea in 1592, and rebuilt in 1867 during King Gojong's reign. The reconstructed Gyeongbokgung Palace, led by Heungseon Daewongun, looked magnificent with more than 500 buildings lined up like a maze.",
 
+        flip_title2: "N서울타워",
+        flip_content2: "",
+
+        flip_title3: "북촌한옥마을",
+        flip_content3: "",
+
+        flip_title4: "명동",
+        flip_content4: "",
+
+        flip_title5: "창덕궁",
+        flip_content5: "",
+
+        flip_title6: "롯데월드",
+        flip_content6: "",
+
         now_sys_lang: "System locale",
     },
     ko: {
@@ -33,10 +48,11 @@ const lang = {
             "서울의 중심, 서울의 상징이자 서울의 가장 아름다운 모습을 한눈에 내려다 볼 수 있는 가장 높은 곳인 N서울타워는 1969년 TV와 라디오 방송을 수도권에 송출하기 위해 한국 최초의 종합 전파탑으로 세워졌습니다. N서울타워는 1980년, 일반인에게 공개된 이후 남산의 살아있는 자연과 함께 서울시민의 휴식공간이자 외국인의 관광명소로 자리 잡았습니다.",
 
         flip_title3: "북촌한옥마을",
-        flip_content3: "북촌 한옥마을은 서울특별시 종로구의 가회동과 삼청동 내에 위치한 한옥마을입니다. 지리상으로 경복궁과 창덕궁, 종묘의 사이에 자리잡고 있습니다. 조선 왕조의 두 궁궐 사이에 위치한 이 지역은 예로부터 청계천과 종로의 윗동네라는 의미로 ‘북촌’이라 불리었으며, 현재의 가회동, 삼청동, 원서동, 재동, 계동 일대에 해당합니다. 많은 사적과 문화재, 민속자료가 있어 도심 속의 박물관이라 불리기도 합니다.",
+        flip_content3:
+            "북촌 한옥마을은 서울특별시 종로구의 가회동과 삼청동 내에 위치한 한옥마을입니다. 지리상으로 경복궁과 창덕궁, 종묘의 사이에 자리잡고 있습니다. 조선 왕조의 두 궁궐 사이에 위치한 이 지역은 예로부터 청계천과 종로의 윗동네라는 의미로 ‘북촌’이라 불리었으며, 현재의 가회동, 삼청동, 원서동, 재동, 계동 일대에 해당합니다. 많은 사적과 문화재, 민속자료가 있어 도심 속의 박물관이라 불리기도 합니다.",
 
         flip_title4: "명동",
-        flip_content4: "",
+        flip_content4: "  ",
 
         flip_title5: "창덕궁",
         flip_content5: "",
