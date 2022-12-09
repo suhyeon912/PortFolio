@@ -13,7 +13,7 @@
    width: 100vw;
    grid-column-start: 1;
    grid-column-end: 4;
-   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 1fr 2.15fr 1fr;
    padding: 2.5px;
 }
 
@@ -29,11 +29,6 @@
    max-width: 450px;
 }
 
-/* .cont-left > div:nth-of-type(1){
-   display: flex;
-   align-items: center;
-} */
-
 .cont-mid,
 .mid-top,
 .mid-bottom {
@@ -42,6 +37,7 @@
 
 .cont-mid {
    grid-template-rows: 1.5fr 2.5fr;
+   margin-right: 0.5%;
 }
 
 .region {
