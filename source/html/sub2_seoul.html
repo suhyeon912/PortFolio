@@ -52,7 +52,7 @@
                 const gnb = document.querySelector(".gnb");
             });
         </script>
-        <script defer src="./js/language.js"></script>
+        <script src="./js/language.js"></script>
     </head>
 
     <body>
@@ -551,6 +551,9 @@
                 </div>
             </div>
         </div>
-        <script>render("en");</script>
+        <script>
+            render("ko");
+            document.getElementById("korea_map").src = "../imgs/KOREA.png";
+        </script>
     </body>
 </html>
