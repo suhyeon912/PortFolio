@@ -117,6 +117,7 @@ function changeSelection() {
     if (optionVal == "btn-kor") {
         render("ko");
         document.getElementById("korea_map").src = "../imgs/대한민국.png";
+        document.getElementById("gnb_2").href = "sub2_main_en.html"
     } else if (optionVal == "btn-eng") {
         render("en");
         document.getElementById("korea_map").src = "../imgs/KOREA.png";
