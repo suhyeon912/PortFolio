@@ -20,13 +20,19 @@
 .cont-left,
 .cont-right {
    display: grid;
+   /* place-items: center; */
    height: 91vh;
    width: 100vw;
    padding: 2.5px;
    grid-template-rows: 1fr 1fr 1fr;
    margin-bottom: 2.5px;
-   max-width: 290px;
+   max-width: 450px;
 }
+
+/* .cont-left > div:nth-of-type(1){
+   display: flex;
+   align-items: center;
+} */
 
 .cont-mid,
 .mid-top,
@@ -35,7 +41,7 @@
 }
 
 .cont-mid {
-   grid-template-rows: 1.7fr 2.5fr;
+   grid-template-rows: 1.5fr 2.5fr;
 }
 
 .region {
@@ -44,8 +50,7 @@
    grid-template-areas:
       "region-img info"
       "region-name info";
-   grid-template-columns: 1.3fr 3fr;
-   grid-template-rows: 1.3fr 1fr;
+   grid-template-columns: 1.3fr 4fr;
    margin: 2.5px;
    padding: 2.5px;
    background: lightgray;
@@ -70,7 +75,7 @@
    text-align: left;
    display: grid;
    place-items: center;
-   padding: 5px;
+   padding: 10px;
    line-height: 2em;
 }
 
@@ -80,7 +85,7 @@
 }
 
 .map {
-   grid-row-start: 2;
+   grid-row-start: 1;
    grid-row-end: 4;
    padding: 2.5px;
    /* background: lightcoral; */
