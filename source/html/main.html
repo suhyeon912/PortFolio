@@ -1,167 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.css" type="text/css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <link rel="shortcut icon" href="#" />
-        <link
-            rel="icon"
-            href="../imgs/favicon.ico"
-            type="image/x-icon"
-            sizes="16x16"
-        />
-        <title>MAIN</title>
-        <script>
-            window.addEventListener("DOMContentLoaded", () => {
-                const ham = document.querySelector(".ham");
-                ham.onclick = () => {
-                    ham.classList.toggle("on");
-                    gnb.classList.toggle("on");
-                };
-                const gnb = document.querySelector(".gnb");
-            });
-        </script>
-        <script type="text/javascript" defer src="./js/slide.js"></script>
-        <script type="text/javascript" src="./js/language.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossorigin="anonymous"
-        />
-    </head>
-    <body>
-        <div class="grid-cont">
-            <!-- 상단 -->
-            <div class="top">
-                <div class="logo">
-                    <a href="main.html"
-                        ><img
-                            src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
-                            alt=""
-                    /></a>
-                </div>
-                <div class="ham">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <nav class="gnb">
-                    <ul>
-                        <li>
-                            <a href="main.html" data-lang="gnb_1">[gnb_1]</a>
-                        </li>
-                        <li>
-                            <a href="sub1_main.html" data-lang="gnb_2"
-                                >[gnb_2]</a
-                            >
-                        </li>
-                        <li>
-                            <a href="sub2_main.html" data-lang="gnb_3"
-                                >[gnb_3]</a
-                            >
-                        </li>
-                        <form>
-                            <select
-                                name="selectbox"
-                                id="selectbox"
-                                onchange="changeSelection()"
-                            >
-                                <option value="" selected disabled>
-                                    Language 🌐
-                                </option>
-                                <span id="locale"></span>
-                                <option value="btn-kor">한국어</option>
-                                <option value="btn-eng">English</option>
-                            </select>
-                        </form>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="cont">
-                <div class="slider-1">
-                    <div class="slides">
-                        <div
-                            class="active"
-                            style="
-                                background-image: url(../imgs/photo/경복궁_main.jpg);
-                            "
-                        >
-                        <span class="img_name">경복궁</span>
-                    </div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/N서울타워_main2.jpg);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/DDP_main1.jpg);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/전주한옥마을_main1.jpg);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/해운대해수욕장_main1.jfif);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/첨성대_main1.jfif);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/감천문화마을_main1.jpg);
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url(../imgs/photo/성산일출봉_main1.jpg);
-                            "
-                        ></div>
-                    </div>
-
-                    <div class="page-btns">
-                        <div class="active"></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="side-btns">
-                        <div>
-                            <span><i class="fas fa-angle-left"></i></span>
-                        </div>
-                        <div>
-                            <span><i class="fas fa-angle-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="icon"
+      href="../imgs/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <title>MAIN</title>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const ham = document.querySelector(".ham");
+        ham.onclick = () => {
+          ham.classList.toggle("on");
+          gnb.classList.toggle("on");
+        };
+        const gnb = document.querySelector(".gnb");
+      });
+    </script>
+    <script type="text/javascript" defer src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/language.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="grid-cont">
+      <!-- 상단 -->
+      <div class="top">
+        <div class="logo">
+          <a href="main.html"
+            ><img
+              src="https://suhyeon912.github.io/PortFolio/source/imgs/logo_ff.png"
+              alt=""
+          /></a>
         </div>
-        <script>render("en");</script>
-    </body>
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="main.html" data-lang="gnb_1">[gnb_1]</a>
+            </li>
+            <li>
+              <a href="sub1_main.html" data-lang="gnb_2">[gnb_2]</a>
+            </li>
+            <li>
+              <a href="sub2_main.html" data-lang="gnb_3">[gnb_3]</a>
+            </li>
+            <form>
+              <select
+                name="selectbox"
+                id="selectbox"
+                onchange="changeSelection()"
+              >
+                <option value="" selected disabled>Language 🌐</option>
+                <span id="locale" />
+                <option value="btn-kor">한국어</option>
+                <option value="btn-eng">English</option>
+              </select>
+            </form>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cont">
+        <div class="slider-1">
+          <div class="slides">
+            <div
+              class="active"
+              style="background-image: url(../imgs/photo/경복궁_main.jpg)"
+            >
+              <span class="img_name">경복궁</span>
+            </div>
+            <div
+              style="background-image: url(../imgs/photo/N서울타워_main2.jpg)"
+            ></div>
+            <div
+              style="background-image: url(../imgs/photo/DDP_main1.jpg)"
+            ></div>
+            <div
+              style="
+                background-image: url(../imgs/photo/전주한옥마을_main1.jpg);
+              "
+            ></div>
+            <div
+              style="
+                background-image: url(../imgs/photo/해운대해수욕장_main1.jfif);
+              "
+            ></div>
+            <div
+              style="background-image: url(../imgs/photo/첨성대_main1.jfif)"
+            ></div>
+            <div
+              style="
+                background-image: url(../imgs/photo/감천문화마을_main1.jpg);
+              "
+            ></div>
+            <div
+              style="background-image: url(../imgs/photo/성산일출봉_main1.jpg)"
+            ></div>
+          </div>
+
+          <div class="page-btns">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="side-btns">
+            <div>
+              <span><i class="fas fa-angle-left"></i></span>
+            </div>
+            <div>
+              <span><i class="fas fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      render("en");
+    </script>
+  </body>
 </html>
 
 <!-- https://codepen.io/kimyangsun/pen/XWJeJVj 이미지 슬라이드 참고 사이트 -->
