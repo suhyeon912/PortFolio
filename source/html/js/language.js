@@ -29,7 +29,7 @@ const lang = {
         flip_content5:
             "Changdeokgung Palace is a Joseon palace located at the foot of Eungbong Peak, the left peak of Bukaksan Mountain. Changdeokgung Palace, built in the east as Gyeongbokgung Palace's palace in 1405, was used for different purposes from the neighboring Changgyeonggung Palace, but it forms one palace, so these two palaces were called 'Donggung' during the Joseon Dynasty. Changdeokgung Palace, which was rebuilt during Gwanghaegun's reign after the Japanese Invasion of Korea in 1592, served as a royal palace of Joseon until Gyeongbokgung Palace was rebuilt by Heungseon Daewongun in 1867.",
 
-        flip_title6: "롯데월드",
+        flip_title6: "Lotte World",
         flip_content6:
             "Lotte World, which opened its culture in 1989, is considered one of the best theme parks in Korea. Lotte World, which boasts a huge scale, consists of Lotte World Adventure and Magic Island. Lotte World Adventure is an indoor theme park where you can have fun at any time of the year regardless of weather or season. Unique rides and souvenir shops greet visitors in each area decorated with national themes. During the day, cultural-themed parades from around the world are held throughout the year, and ecstatic light parades are eye-catching at night. Magic Island, an outdoor theme park, is surrounded by Seokchon Lake, so you can experience a fantastic water-themed adventure.",
 
@@ -117,9 +117,10 @@ function changeSelection() {
     if (optionVal == "btn-kor") {
         render("ko");
         document.getElementById("korea_map").src = "../imgs/대한민국.png";
-        document.getElementById("gnb_2").href = "sub2_main_en.html";
+        document.getElementById("gnb_2").href = "sub2_main.html";
     } else if (optionVal == "btn-eng") {
         render("en");
         document.getElementById("korea_map").src = "../imgs/KOREA.png";
+        document.getElementById("gnb_2").href = "sub2_main_en.html";
     }
 }
